@@ -1,0 +1,578 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Invoice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles for vertical gray bars */
+      .vbar {
+        width: 6px;
+        background-color: #8b8b8b;
+        margin-right: 0.5rem;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        flex-wrap: nowrap;
+      }
+      @media print {
+        @page {
+          margin: 0;
+        }
+        body {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white font-serif text-black p-4 max-w-7xl mx-auto">
+    <div>www.yas.co.tz</div>
+    <!-- Header: Company info + Pay notice + Logo + Invoice date/no -->
+    <div class="header mb-4">
+      <!-- Left: Company + Pay notice -->
+      <div class="border-4 border-gray-400 p-3 w-1/2 space-y-4">
+        <div>
+          <a class="font-bold text-blue-900 text-lg inline-block mb-1" href="#">
+            Honora Tanzania PLC
+          </a>
+          <p class="text-sm leading-tight">
+            PSSSF Commercial Complex, Sam Nujoma Road<br />
+            P.O. Box 2929, Dar es Salaam, Tanzania<br />
+            e-mail:
+            <span class="font-normal"> TigoBusinessBill@tigo.co.tz </span>
+          </p>
+        </div>
+        <div class="border-4 border-gray-400 p-2 text-[10px] leading-tight">
+          <p class="mb-0.5">
+            Pay previous balance if any, immediately to avoid disconnection. Pay
+            your current charges by 20 Feb 2025 to avoid late payment charges.
+          </p>
+          <p class="mb-0.5">VRN: 10-007379-N TIN: 100-149-192</p>
+          <p class="mb-0.5">
+            For postpaid queries, email TigoBusinessBill@tigo.co.tz or call
+            Customer Service at 101.
+          </p>
+          <p class="mb-0.5">#Yas, The Fastest Data Network in the country.</p>
+          <p class="mb-0.5">
+            #Yas, Your Partner of Choice, a solution for every Company.
+          </p>
+        </div>
+      </div>
+      <!-- Right: Logo + Invoice details -->
+      <div class="flex flex-col items-center w-1/2">
+        <img
+          src="Yasss.png"
+          alt="logo Yas Mixx"
+          class="max-w-full h-auto mb-4"
+        />
+        <div class="flex space-x-4 w-full justify-center">
+          <!-- Invoice Date -->
+          <div class="border border-gray-300 w-1/2">
+            <div class="flex items-center border-b border-gray-300">
+              <div class="vbar h-6"></div>
+              <p class="font-semibold text-sm pr-2">Invoice Date:</p>
+            </div>
+            <div class="flex text-center text-xs">
+              <div class="flex-1 border-r border-gray-300 py-1">01</div>
+              <div class="flex-1 border-r border-gray-300 py-1">Feb</div>
+              <div class="flex-1 py-1">2025</div>
+            </div>
+          </div>
+          <!-- Invoice No -->
+          <div class="border border-gray-300 w-1/2">
+            <div class="flex items-center border-b border-gray-300">
+              <div class="vbar h-6"></div>
+              <p class="font-semibold text-sm pr-2">Invoice No:</p>
+            </div>
+            <div class="py-1 text-xs pl-2">28377399</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bill info -->
+    <div class="flex flex-col md:flex-row md:space-x-6 mb-6">
+      <!-- Bill to -->
+      <div class="flex-1 border border-gray-300">
+        <div class="flex items-center border-b border-gray-300">
+          <div class="vbar h-6"></div>
+          <p class="font-semibold text-sm pr-2">Bill to:</p>
+        </div>
+        <div class="border-b border-gray-300 font-bold text-xs pl-2 py-1">
+          NUNGWI VILLAGE BEACH RESORT
+        </div>
+        <div class="pl-2 py-1 font-bold text-xs">
+          DOUBLE TREE HOTEL MASAKI DSM 255
+        </div>
+      </div>
+      <!-- Customer infoo -->
+      <div class="flex flex-col space-y-4 mt-4 md:mt-0 w-full md:w-64">
+        <div class="border border-gray-300">
+          <div class="flex items-center border-b border-gray-300">
+            <div class="vbar h-6"></div>
+            <p class="font-semibold text-sm pr-2">Contact Person Number:</p>
+          </div>
+          <div class="py-1 text-xs pl-2"></div>
+        </div>
+        <div class="border border-gray-300">
+          <div class="flex items-center border-b border-gray-300">
+            <div class="vbar h-6"></div>
+            <p class="font-semibold text-sm pr-2">Account Number:</p>
+          </div>
+          <div class="py-1 text-xs pl-2">9999999411</div>
+        </div>
+        <div class="border border-gray-300">
+          <div class="flex items-center border-b border-gray-300">
+            <div class="vbar h-6"></div>
+            <p class="font-semibold text-sm pr-2">Customer VRN: 07-000566-P</p>
+          </div>
+          <div class="py-1 text-xs pl-2"></div>
+        </div>
+        <div class="border border-gray-300">
+          <div class="flex items-center border-b border-gray-300">
+            <div class="vbar h-6"></div>
+            <p class="font-semibold text-sm pr-2">Customer TIN: 300-106-307</p>
+          </div>
+          <div class="py-1 text-xs pl-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:space-x-6 mb-6">
+      <!-- Bill period -->
+      <div class="flex-1 border border-gray-300">
+        <div class="flex items-center border-b border-gray-300">
+          <div class="vbar h-6"></div>
+          <p class="font-semibold text-sm pr-2">Bill Period:</p>
+        </div>
+        <div class="flex text-center text-xs">
+          <div class="flex-1 border-r border-gray-300 py-1">01</div>
+          <div class="flex-1 border-r border-gray-300 py-1">Jan</div>
+          <div class="flex-1 py-1">2025</div>
+          <div class="py-1 px-2">to</div>
+          <div class="flex-1 border-r border-gray-300 py-1">31</div>
+          <div class="flex-1 border-r border-gray-300 py-1">Jan</div>
+          <div class="flex-1 py-1">2025</div>
+        </div>
+      </div>
+      <!-- QR CODE -->
+      <div
+        class="flex-1 border border-gray-300 flex justify-center items-center mt-4 md:mt-0"
+      >
+        <img src="codeQR.png" alt="code qr" height="100" width="100" />
+      </div>
+      <!-- Due date -->
+      <div class="flex-1 border border-gray-300 mt-4 md:mt-0">
+        <div class="flex items-center border-b border-gray-300">
+          <div class="vbar h-6"></div>
+          <p class="font-semibold text-sm pr-2">Due Date:</p>
+        </div>
+        <div class="flex text-center text-xs">
+          <div class="flex-1 border-r border-gray-300 py-1">20</div>
+          <div class="flex-1 border-r border-gray-300 py-1">Feb</div>
+          <div class="flex-1 py-1">2025</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:space-x-6 font-bold text-sm mb-2">
+      <div class="flex-1">Summary of charges for current bill period</div>
+      <div class="flex-1">Summary of total transaction for the period</div>
+    </div>
+    <div class="flex flex-col md:flex-row md:space-x-6 text-xs mb-6">
+      <!-- Summary of charges -->
+      <table
+        class="table-fixed border border-gray-300 w-full md:w-1/2 border-collapse"
+      >
+        <thead>
+          <tr class="bg-white">
+            <th
+              class="border border-gray-300 text-blue-900 text-left px-2 py-1 w-1/2"
+            >
+              Service
+            </th>
+            <th
+              class="border border-gray-300 text-blue-900 text-right px-2 py-1 w-1/2"
+            >
+              Amount (Tzs)
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">Voice</td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              414.33
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">SMS</td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              184.00
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">Data</td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">0.00</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">Roaming Charges</td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              7,600,924.06
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">
+              Others (Bundles etc)
+            </td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              360,000.00
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="border border-gray-300 text-blue-900 font-bold px-2 py-0.5"
+            >
+              Sub Total:
+            </td>
+            <td class="border border-gray-300 text-right font-bold px-2 py-0.5">
+              7,961,522.39
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="border border-gray-300 text-blue-900 font-bold px-2 py-0.5"
+            >
+              VAT:
+            </td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              1,433,074.03
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="border border-gray-300 text-blue-900 font-bold px-2 py-0.5"
+            >
+              Total Current Charges:
+            </td>
+            <td class="border border-gray-300 text-right font-bold px-2 py-0.5">
+              9,394,596.42
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Summary of total -->
+      <table
+        class="table-fixed border border-gray-300 w-full md:w-1/2 border-collapse mt-4 md:mt-0"
+      >
+        <thead>
+          <tr class="bg-white">
+            <th
+              class="border border-gray-300 text-blue-900 text-left px-2 py-1 w-1/2"
+            >
+              Balance &amp; Payments
+            </th>
+            <th
+              class="border border-gray-300 text-blue-900 text-right px-2 py-1 w-1/2"
+            >
+              Amount (Tzs)
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">Previous Balance</td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              1,317,500.90
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">
+              (-) Payments Received
+            </td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              866,885.80
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">(+) Current Bill</td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">
+              9,394,596.42
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">
+              (+) Late Payment Fee
+            </td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">0.00</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-2 py-0.5">
+              (+/-) Adjustments
+            </td>
+            <td class="border border-gray-300 text-right px-2 py-0.5">0.00</td>
+          </tr>
+          <tr>
+            <td
+              class="border border-gray-300 text-blue-900 font-bold px-2 py-0.5 text-right"
+              colspan="2"
+            >
+              <span class="float-left"> Total outstanding </span>
+              9,845,211.52
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Banner -->
+    <div>BANNERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</div>
+    <!-- Tear off line -->
+    <div
+      class="relative border-t border-dashed border-gray-400 text-center text-gray-500 italic text-[12px] py-2 select-none"
+    >
+      Tear this slip off and return it with your payment.Do not staple
+    </div>
+    <!-- Payment details -->
+    <div
+      class="flex flex-col md:flex-row justify-start space-y-4 md:space-y-0 md:space-x-12 px-6 py-6 text-[14px]"
+    >
+      <div class="border border-gray-300 max-w-[160px]">
+        <div
+          class="flex items-center border-b border-gray-300 bg-gray-100 pl-2 font-semibold"
+          style="border-left: 6px solid #666"
+        >
+          Bill Date:
+        </div>
+        <div class="flex text-center text-[13px] font-normal">
+          <div class="flex-1 border-r border-gray-300 py-1">01</div>
+          <div class="flex-1 border-r border-gray-300 py-1">Feb</div>
+          <div class="flex-1 py-1">2025</div>
+        </div>
+      </div>
+      <div class="border border-gray-300 max-w-[160px]">
+        <div
+          class="flex items-center border-b border-gray-300 bg-gray-100 pl-2 font-semibold"
+          style="border-left: 6px solid #666"
+        >
+          Due Date:
+        </div>
+        <div class="flex text-center text-[13px] font-normal">
+          <div class="flex-1 border-r border-gray-300 py-1">20</div>
+          <div class="flex-1 border-r border-gray-300 py-1">Feb</div>
+          <div class="flex-1 py-1">2025</div>
+        </div>
+      </div>
+      <div class="border border-gray-300 max-w-[160px]">
+        <div
+          class="flex items-center border-b border-gray-300 bg-gray-100 pl-2 font-semibold"
+          style="border-left: 6px solid #666"
+        >
+          Amount Due:
+        </div>
+        <div class="py-1 pl-2 text-[13px] font-normal">9,845,211.52</div>
+      </div>
+    </div>
+    <!-- Payment instructions -->
+    <div class="px-6 pb-6 text-[14px] leading-tight">
+      <p class="font-bold mb-2">
+        Payment should be made in TZS to the below mentioned account or through
+        Mixx by Yas:
+      </p>
+      <div
+        class="flex flex-col md:flex-row md:space-x-12 text-[13px] font-normal"
+      >
+        <div class="md:w-1/2 space-y-0.5">
+          <p>BANK NAME: CITI BANK TANZANIA</p>
+          <p>ACCOUNT NAME: HONORA TANZANIA PUBLIC LIMITED COMPANY</p>
+          <p>ACCOUNT NUMBER: 100783029</p>
+          <p>SWIFT CODE: CITITZTTZ</p>
+        </div>
+        <div class="md:w-1/2 space-y-0.5">
+          <p>BANK NAME: CRDB BANK T LTD</p>
+          <p>ACCOUNT NAME: HONORA TANZANIA PUBLIC LIMITED COMPANY</p>
+          <p>ACCOUNT NUMBER: 0150027153500</p>
+          <p>SWIFT CODE: 00003390</p>
+        </div>
+      </div>
+    </div>
+    <!-- keyboard smash -->
+    <div class="px-6 pb-4 text-[11px] font-serif">
+      N12AI12KUUI7AMGIU5M6NUSM0JU12IR11MU/925DB8673712_132151/20250203132151/VSD-005#9394596.42
+      / https://verify.tra.go.tz/925DB8673712_132151
+    </div>
+    <!-- invoice summary -->
+    <div class="p-4">
+      <h2 class="font-bold text-base mb-2">
+        INVOICE SUMMARY (NUNGWI VILLAGE BEACH RESORT)
+      </h2>
+      <div class="overflow-x-auto">
+        <table
+          class="table-fixed border-collapse border border-gray-400 w-full"
+        >
+          <thead>
+            <tr>
+              <th
+                class="border border-gray-400 w-24 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                Phone Number
+              </th>
+              <th
+                class="border border-gray-400 w-36 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                Customer Name
+              </th>
+              <th
+                class="border border-gray-400 w-20 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                Voice (Tzs)
+              </th>
+              <th
+                class="border border-gray-400 w-20 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                SMS (Tzs)
+              </th>
+              <th
+                class="border border-gray-400 w-20 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                Data (Tzs)
+              </th>
+              <th
+                class="border border-gray-400 w-24 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                Roaming (Tzs)
+              </th>
+              <th
+                class="border border-gray-400 w-32 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                Others (Bundles etc)(Tzs)
+              </th>
+              <th
+                class="border border-gray-400 w-20 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                VAT (Tzs)
+              </th>
+              <th
+                class="border border-gray-400 w-32 text-left font-bold text-xs text-blue-900 px-1 py-0.5 align-top"
+              >
+                Total Current Charges(Tzs)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                779000141
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                Abubakar Juma
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                80,000.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                14,400.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                94,400.00
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                779000142
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                Abubakar Juma
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                80,000.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                14,400.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                94,400.00
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                779000008
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                Abdilah Shauri
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                80,000.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                14,400.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                94,400.00
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                779000009
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                Abdilah Shauri
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                80,000.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                14,400.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                94,400.00
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                779999099
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                Ian Mclachlan
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">414.33</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">184.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">0.00</td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                7,600,924.06
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                40,000.00
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                1,375,474.03
+              </td>
+              <td class="border border-gray-400 text-xs px-1 py-0.5">
+                9,016,996.42
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
